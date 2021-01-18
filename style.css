@@ -1,0 +1,167 @@
+body {
+    background-image: url(/images/bg-pattern-top-desktop.svg) , url(/images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat ,no-repeat;
+    background-position: inherit, bottom;
+    font-family: 'Spartan', sans-serif;
+    width: 100vw;
+    /* height: 100vh; */
+}
+
+.profile-container {
+    width: 100vw;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+
+.profile-top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50%;
+    padding-top: 20px;
+}
+
+.profile-left-side {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.profile-left-side h1 {
+    color: purple;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.profile-left-side span {
+    color: #8080807a;
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+.profile-right-side {
+    display: flex;
+    flex-direction: column;
+    flex: 0.5;
+}
+
+.rates {
+    
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    background-color: #80808026
+
+}
+
+.rates span {
+    padding: 20px;
+}
+
+.profile-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60%;
+}
+
+.profile-comments {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid purple;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    background-color: rgb(63, 11, 63);
+}
+.first {
+    margin-top: 0;
+}
+ .second {
+    margin-top: 50px;
+}
+.third {
+    margin-top: 100px;
+}
+
+.profile-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.profile-info img {
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.profile-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.name {
+    color: white;
+    padding: 10px;
+}
+
+ .info {
+    color: #d29090;
+}
+
+.profile-comment {
+    color: white;
+    padding: 10px;
+    line-height: 1.5;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .profile-container {
+        flex-direction: column;
+    }
+   
+    .profile-top{
+        flex-direction: column;
+        height: 70vh;
+        
+    }
+    .profile-left-side {
+        width: 70vw;
+    }
+    .profile-left-side h1 {
+        font-size: 20px;
+        padding-top: 20px;
+    }
+    .profile-left-side span {
+        font-size: 15px;
+    }
+
+    .rates {
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+    .rates span {
+        padding: 5px;
+    }
+
+    .profile-bottom {
+        flex-direction: column;
+    }
+
+    .profile-comments {
+        margin-top: 10px;
+    }
+
+  }
